@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Manuel</title>
+    </head>
+    <body style="margin: 100px 200px">
+        <h1 style="text-align: center">Manuel d'utilisation</h1>
+        
+        <br>
+        L'application est roulée soit en lançant le <code>gym.bat</code>
+        pour les utilisateurs Windows, soit directement par ligne de
+        commande en écrivant <code>java -jar Gym.jar</code>. Il est nécessaire
+        que la machine aie au moins la version Java 11 ou plus récent pour
+        rouler l'application. Lorsque roulée, un menu par terminal se présente
+        et indique les commandes possibles d'entrée pour les utilisateurs. Le
+        programme attend par la suite la commande à entrée. Plusieurs
+        différentes commandes sont possibles à entrer. La commande entrée par
+        un utilisateur n'est pas <i>case-sensitive</i>, donc il n'y a pas de
+        souci quant aux majuscules et minuscules dans les commandes. Les
+        utilisateurs seront responsable de déterminer, selon leur rôle en tant
+        qu'acteurs dans l'établissement #GYM, les actions qu'ils auront droit
+        de faire. Par exemple, une action sous le nom <i>Change Person
+        Status</i> est censée être disponible pour les systèmes de services
+        comptables RnB par exemple pour ce qui est de la suspension d'un membre
+        si des frais n'ont pas été payés. On suppose donc normalement que notre
+        application est utilisée sous les bons contextes. De plus, les
+        commandes contiennent souvent les formats attendues des entrées.
+        Si un mauvais format est entrée, un message avisant l'attribut
+        contenant l'erreur est affiché. Certaines des actions ne sont que
+        possibles que si le statut d'une personne est valide. Tout cela est
+        décrit plus en détail lors de l'interaction ou dans le diagramme de CU.
+        Parmi les commandes offertes voici une description de chacune:
+        <ul>
+            <li>
+                <h4>Change Person Status</h4>
+                Permet de modifier le statut d'un membre ou d'un
+                professionnel. Appelée par l'agent ou les services RnB.
+            </li>
+            <li>
+                <h4>Create Person</h4>
+                Permet la création d'un membre ou professionnel souhaitant
+                s'adhérer à #GYM. Entreprise auprès de l'agent. Suite à la
+                création, le code du nouveau membre ou professionnel est
+                affichée sur la ligne de commande.
+            </li>
+            <li>
+                <h4>Modify Person</h4>
+                Permet de modifier ses données de compte. Entreprise auprès de
+                l'agent.
+            </li>
+            <li>
+                <h4>Delete Person</h4>
+                Permet de supprimer le compte d'une personne. Entreprise auprès
+                de l'agent.
+            </li>
+            <li>
+                <h4>Create Service</h4>
+                Permet à un professionnel de créer un service sous son
+                numéro de professionnel. Entreprise auprès de l'agent. Suite à
+                la création, des séances pour la semaine sont automatiquement
+                générées selon la récurrence hebdomadaire indiquée.
+            </li>
+            <li>
+                <h4>Modify Service</h4>
+                Permet à un professionnel de modifier un service existant
+                sous son numéro de professionnel. Entreprise auprès de l'agent.
+                Suite à la modification, les séances existantes sont mises à
+                jour s'il y a lieu.
+            </li>
+            <li>
+                <h4>Delete Service</h4>
+                Permet à un professionnel de supprimer un service existant sous
+                son numéro de professionnel. Entreprise auprès de l'agent. Suite
+                à la modification, les séances existantes sont supprimées s'il y
+                a lieu.
+            </li>
+            <li>
+                <h4>Sessions Today</h4>
+                Permet à un membre de consulter les séances disponibles pour le
+                jour même. Entreprise à partir de l'application mobile.
+            </li>
+            <li>
+                <h4>Available Services</h4>
+                Permet à un membre ou un professionnel de consulter la liste de
+                services qui existent sur le système. Entreprise à partir de
+                l'application mobile.
+            </li>
+            <li>
+                <h4>Generate Weekly Sessions Report</h4>
+                Permet au gérant de généré un rapport de synthèse. Entreprise
+                auprès de l'agent.
+            </li>
+            <li>
+                <h4>Confirm Registration</h4>
+                Permet au membre de confirmer sa présence à une séance.
+                Entreprise auprès du professionnel donnant la séance et à l'aide
+                de l'application mobile.
+            </li>
+            <li>
+                <h4>Register Session</h4>
+                Permet à un membre de s'inscrire à une séance. Entreprise à
+                partir de l'application mobile. Un paiement automatique est fait
+                suite à l'inscription.
+            </li>
+            <li>
+                <h4>Access #GYM</h4>
+                Permet à un membre d'avoir accès à l'établissement #GYM.
+            </li>
+            <li>
+                <h4>Consult Registrations</h4>
+                Permet à un professionnel de consulter les inscriptions à ses
+                séances. Entreprise à partir de l'application mobile.
+            </li>
+            <li>
+                <h4>Exit</h4>
+                Quitte l'application et sauvegarde les données dans le présent
+                état.
+            </li>
+        </ul>
+    </body>
+</html>
